@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "tree-sitter-fountain": "^1.1.0"
-},
+  },
   "engines": {
     "node": "*",
     "atom": ">=1.0.0 <2.0.0"
