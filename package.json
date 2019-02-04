@@ -8,6 +8,9 @@
   ],
   "repository": "https://github.com/UserNobody14/language-fountain",
   "license": "MIT",
+  "dependencies": {
+    "tree-sitter-fountain": "^1.1.0"
+},
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
