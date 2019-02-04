@@ -9,50 +9,50 @@ parser: 'tree-sitter-fountain'
 fileTypes: ['fountain', 'ftn']
 
 scopes:
-#Match dialogue action and centered action.
-#Dialog
-'dialogue > character' : 'string.other.dialogue.character.fountain'
-'dialogue > spoken' : 'string.other.dialogue.spoken.fountain'
-'dialogue > parenthetical' : 'string.other.dialogue.parenthetical.fountain'
-'dialogue > lyric' : 'lyric'
-#action
-'action' : 'fountain.action'
-'centered_action' : 'fountain.centered.action'
-#Note to self: add in punctuation def entities?
-#Emphasis Text
-'action, centered_action, spoken > normal_txt' : 'markup.normal.text'
-'action, centered_action, spoken > italic_txt' : 'markup.italic.text'
-'action, centered_action, spoken > bold_txt' : 'markup.bold.text'
-'action, centered_action, spoken > bold_and_italic_txt' : 'markup.bold.italic.text'
-'action, centered_action, spoken > normal_txt' : 'underlined.text'
+    #Match dialogue action and centered action.
+    #Dialog
+    'dialogue > character' : 'string.other.dialogue.character.fountain'
+    'dialogue > spoken' : 'string.other.dialogue.spoken.fountain'
+    'dialogue > parenthetical' : 'string.other.dialogue.parenthetical.fountain'
+    'dialogue > lyric' : 'lyric'
+    #action
+    'action' : 'fountain.action'
+    'centered_action' : 'fountain.centered.action'
+    #Note to self: add in punctuation def entities?
+    #Emphasis Text
+    'action, centered_action, spoken > normal_txt' : 'markup.normal.text'
+    'action, centered_action, spoken > italic_txt' : 'markup.italic.text'
+    'action, centered_action, spoken > bold_txt' : 'markup.bold.text'
+    'action, centered_action, spoken > bold_and_italic_txt' : 'markup.bold.italic.text'
+    'action, centered_action, spoken > normal_txt' : 'underlined.text'
 
-#Match Sections and scene headings
-'section1' : 'section.level1.fountain'
-'section2' : 'section.level2.fountain'
-'section3' : 'section.level3.fountain'
-'section4' : 'section.level4.fountain'
-'section5' : 'section.level5.fountain'
-'section6' : 'section.level6.fountain'
+    #Match Sections and scene headings
+    'section1' : 'section.level1.fountain'
+    'section2' : 'section.level2.fountain'
+    'section3' : 'section.level3.fountain'
+    'section4' : 'section.level4.fountain'
+    'section5' : 'section.level5.fountain'
+    'section6' : 'section.level6.fountain'
 
-'sec_heading1' : 'heading.level1.fountain'
-'sec_heading2' : 'heading.level2.fountain'
-'sec_heading3' : 'heading.level3.fountain'
-'sec_heading4' : 'heading.level4.fountain'
-'sec_heading5' : 'heading.level5.fountain'
-'sec_heading6' : 'heading.level6.fountain'
+    'sec_heading1' : 'heading.level1.fountain'
+    'sec_heading2' : 'heading.level2.fountain'
+    'sec_heading3' : 'heading.level3.fountain'
+    'sec_heading4' : 'heading.level4.fountain'
+    'sec_heading5' : 'heading.level5.fountain'
+    'sec_heading6' : 'heading.level6.fountain'
 
-#Match Scenes
-'scene' : 'fountain.scene'
+    #Match Scenes
+    'scene' : 'fountain.scene'
 
-#Match Misc
-'note' : 'comment.note.fountain'
-'synopsis' : 'comment.synopsis.fountain'
-'boneyard' : 'comment.block.fountain'
-'page_break' : 'fountain.page.break'
-'transition' : 'fountain.transition'
+    #Match Misc
+    'note' : 'comment.note.fountain'
+    'synopsis' : 'comment.synopsis.fountain'
+    'boneyard' : 'comment.block.fountain'
+    'page_break' : 'fountain.page.break'
+    'transition' : 'fountain.transition'
 
-#Match title page and keys.
-'title_page' : 'fountain.title'
-'title_page > k_v_pair' : 'fountain.keyandvalue'
-'k_v_pair > key' : 'fountain.key'
-'k_v_pair > value' : 'fountain.value'
+    #Match title page and keys.
+    'title_page' : 'fountain.title'
+    'title_page > k_v_pair' : 'fountain.keyandvalue'
+    'k_v_pair > key' : 'fountain.key'
+    'k_v_pair > value' : 'fountain.value'
