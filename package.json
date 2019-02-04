@@ -10,7 +10,7 @@
   "repository": "https://github.com/UserNobody14/language-fountain",
   "license": "MIT",
   "dependencies": {
-    "tree-sitter-fountain": "^1.1.0"
+    "tree-sitter-fountain": "^1.2.0"
   },
   "engines": {
     "node": "*",

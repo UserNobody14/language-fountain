@@ -10,8 +10,7 @@ fileTypes: ['fountain', 'ftn']
 
 scopes:
     #Match dialogue action and centered action.
-    #Dialog
-    'dialogue > character' : 'string.other.dialogue.character.fountain'
+    #Dialog    'dialogue > character' : 'string.other.dialogue.character.fountain'
     'dialogue > spoken' : 'string.other.dialogue.spoken.fountain'
     'dialogue > parenthetical' : 'string.other.dialogue.parenthetical.fountain'
     'dialogue > lyric' : 'lyric'
@@ -20,11 +19,12 @@ scopes:
     'centered_action' : 'fountain.centered.action'
     #Note to self: add in punctuation def entities?
     #Emphasis Text
-    'action, centered_action, spoken > normal_txt' : 'markup.normal.text'
+
+    #'action, centered_action, spoken > normal_txt' : 'markup.normal.text'
     'action, centered_action, spoken > italic_txt' : 'markup.italic.text'
     'action, centered_action, spoken > bold_txt' : 'markup.bold.text'
     'action, centered_action, spoken > bold_and_italic_txt' : 'markup.bold.italic.text'
-    'action, centered_action, spoken > normal_txt' : 'underlined.text'
+    'action, centered_action, spoken > underlined_txt' : 'markup.underlined.text'
 
     #Match Sections and scene headings
     'section1' : 'section.level1.fountain'
@@ -34,15 +34,15 @@ scopes:
     'section5' : 'section.level5.fountain'
     'section6' : 'section.level6.fountain'
 
-    'sec_heading1' : 'heading.level1.fountain'
-    'sec_heading2' : 'heading.level2.fountain'
-    'sec_heading3' : 'heading.level3.fountain'
-    'sec_heading4' : 'heading.level4.fountain'
-    'sec_heading5' : 'heading.level5.fountain'
-    'sec_heading6' : 'heading.level6.fountain'
+    'sec_heading1' : 'secheading.level1.fountain'
+    'sec_heading2' : 'secheading.level2.fountain'
+    'sec_heading3' : 'secheading.level3.fountain'
+    'sec_heading4' : 'secheading.level4.fountain'
+    'sec_heading5' : 'secheading.level5.fountain'
+    'sec_heading6' : 'secheading.level6.fountain'
 
     #Match Scenes
-    'scene' : 'fountain.scene'
+    'scene_heading' : 'fountain.scene.heading'
 
     #Match Misc
     'note' : 'comment.note.fountain'
@@ -56,3 +56,7 @@ scopes:
     'title_page > k_v_pair' : 'fountain.keyandvalue'
     'k_v_pair > key' : 'fountain.key'
     'k_v_pair > value' : 'fountain.value'
+
+    #////////////////////////////////////////////
+    #tried naming them after normal css items to improve reliability?
+    'action, centered_action, spoken > normal_txt' : 'string.quoted'
