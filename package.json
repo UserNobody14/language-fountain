@@ -4,7 +4,8 @@
   "description": "A short description of your language package",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "tree-sitter"
   ],
   "repository": "https://github.com/UserNobody14/language-fountain",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "tree-sitter-fountain": "^1.1.0"
 },
   "engines": {
+    "node": "*",
     "atom": ">=1.0.0 <2.0.0"
   }
 }
