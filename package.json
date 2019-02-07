@@ -18,9 +18,9 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "providedServices": {
-  "autocomplete.provider": {
-    "versions": {
-      "4.0.0": "provide"
+    "autocomplete.provider": {
+      "versions": {
+        "4.0.0": "provide"
       }
     }
   }

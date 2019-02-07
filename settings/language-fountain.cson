@@ -6,3 +6,14 @@
     'commentStart': '/*'
     'commentEnd' : '*/'
     'softWrap': true
+
+# Symbol provision
+'.source.fountain':
+  autocomplete:
+    symbols:
+      character:
+        selector: '.dialogue.character.fountain'
+        typePriority: 6
+      scene_heading:
+        selector: '.fountain.scene.heading'
+        typePriority: 5
