@@ -12,5 +12,5 @@ describe "Fountain grammar", ->
       grammar = atom.syntax.grammarForScopeName("source.fountain")
 
   it "parses the grammar", ->
-    expect(grammar).toBeTruthy()
+    expect(grammar).toBeDefined()
     expect(grammar.scopeName).toBe "source.fountain"

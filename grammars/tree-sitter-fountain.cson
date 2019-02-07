@@ -8,23 +8,36 @@ parser: 'tree-sitter-fountain'
 
 fileTypes: ['fountain', 'ftn']
 
+folds: [
+  {type: 'scene'},
+  {type: 'section1'},
+  {type: 'section2'},
+  {type: 'section3'},
+  {type: 'section4'},
+  {type: 'section5'},
+  {type: 'section6'},
+  {type: 'boneyard'}
+]
+
 scopes:
     #Match dialogue action and centered action.
-    #Dialog    'dialogue > character' : 'string.other.dialogue.character.fountain'
-    'dialogue > spoken' : 'string.other.dialogue.spoken.fountain'
+    #Dialog
+    'dialogue > character' : 'string.other.dialogue.character.fountain'
     'dialogue > parenthetical' : 'string.other.dialogue.parenthetical.fountain'
     'dialogue > lyric' : 'lyric'
-    #action
-    'action' : 'fountain.action'
-    'centered_action' : 'fountain.centered.action'
     #Note to self: add in punctuation def entities?
     #Emphasis Text
+    'action, centered_action > normal_txt' : 'markup.normal.action'
+    'action, centered_action > italic_txt' : 'markup.italic.action'
+    'action, centered_action > bold_txt' : 'markup.bold.action'
+    'action, centered_action > bold_and_italic_txt' : 'markup.bold.italic.action'
+    'action, centered_action > underlined_txt' : 'markup.underlined.action'
 
-    #'action, centered_action, spoken > normal_txt' : 'markup.normal.text'
-    'action, centered_action, spoken > italic_txt' : 'markup.italic.text'
-    'action, centered_action, spoken > bold_txt' : 'markup.bold.text'
-    'action, centered_action, spoken > bold_and_italic_txt' : 'markup.bold.italic.text'
-    'action, centered_action, spoken > underlined_txt' : 'markup.underlined.text'
+    'spoken > normal_txt' : 'markup.normal.spoken.dialogue.fountain'
+    'spoken > italic_txt' : 'markup.italic.spoken.dialogue.fountain'
+    'spoken > bold_txt' : 'markup.bold.spoken.dialogue.fountain'
+    'spoken > bold_and_italic_txt' : 'markup.bold.italic.spoken.dialogue.fountain'
+    'spoken > underlined_txt' : 'markup.underlined.spoken.dialogue.fountain'
 
     #Match Sections and scene headings
     'section1' : 'section.level1.fountain'
@@ -59,4 +72,5 @@ scopes:
 
     #////////////////////////////////////////////
     #tried naming them after normal css items to improve reliability?
-    'action, centered_action, spoken > normal_txt' : 'string.quoted'
+    # lookup github markup?
+    #'action, centered_action, spoken > normal_txt' : 'string.quoted'
