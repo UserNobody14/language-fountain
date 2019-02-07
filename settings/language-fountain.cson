@@ -6,14 +6,11 @@
     'commentStart': '/*'
     'commentEnd' : '*/'
     'softWrap': true
-
-# Symbol provision
-'.source.fountain':
-  autocomplete:
+  'autocomplete':
     symbols:
-      character:
-        selector: 'dialogue.character.fountain'
-        typePriority: 6
-      scene_heading:
-        selector: 'fountain.scene.heading'
-        typePriority: 5
+      class:
+        selector: '.dialogue.character.fountain'
+        typePriority: 2
+      function:
+        selector: '.fountain.scene.heading'
+        typePriority: 1
