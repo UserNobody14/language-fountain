@@ -6,7 +6,7 @@
     'commentStart': '/*'
     'commentEnd' : '*/'
     'softWrap': true
-  'autocomplete':
+  autocomplete:
     symbols:
       class:
         selector: '.dialogue.character.fountain'
