@@ -2,15 +2,22 @@
 # https://github.com/atom/language-gfm/blob/master/settings/gfm.cson
 
 '.source.fountain':
+  'autocomplete':
+    'symbols':
+      character:
+        selector: '.dialogue.character'
+        typePriority: 6
+      scene:
+        selector: '.scene_heading'
+        typePriority: 5
+      '':
+        selector: '.source.fountain'
+        typePriority: 1
+      builtin:
+        suggestions: [
+          'LINT', 'FISHER'
+        ]
   'editor':
     'commentStart': '/*'
     'commentEnd' : '*/'
     'softWrap': true
-  autocomplete:
-    symbols:
-      class:
-        selector: '.dialogue.character.fountain'
-        typePriority: 2
-      function:
-        selector: '.fountain.scene.heading'
-        typePriority: 1
