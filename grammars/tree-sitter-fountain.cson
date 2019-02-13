@@ -47,12 +47,12 @@ scopes:
     'section5' : 'section.level5.fountain'
     'section6' : 'section.level6.fountain'
 
-    'sec_heading1' : 'secheading.level1.fountain'
-    'sec_heading2' : 'secheading.level2.fountain'
-    'sec_heading3' : 'secheading.level3.fountain'
-    'sec_heading4' : 'secheading.level4.fountain'
-    'sec_heading5' : 'secheading.level5.fountain'
-    'sec_heading6' : 'secheading.level6.fountain'
+    'sec_heading1' : 'secHeading.level1.heading1'
+    'sec_heading2' : 'secHeading.level2.heading2'
+    'sec_heading3' : 'secHeading.level3.heading3'
+    'sec_heading4' : 'secHeading.level4.heading4'
+    'sec_heading5' : 'secHeading.level5.heading5'
+    'sec_heading6' : 'secHeading.level6.heading6'
 
     #Match Scenes
     'scene_heading' : 'fountain.scene.heading'

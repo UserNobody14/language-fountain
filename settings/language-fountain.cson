@@ -6,17 +6,10 @@
     'symbols':
       character:
         selector: '.dialogue.character'
-        typePriority: 6
+        typePriority: 2
       scene:
-        selector: '.scene_heading'
-        typePriority: 5
-      '':
-        selector: '.source.fountain'
+        selector: '.scene.heading'
         typePriority: 1
-      builtin:
-        suggestions: [
-          'LINT', 'FISHER'
-        ]
   'editor':
     'commentStart': '/*'
     'commentEnd' : '*/'
