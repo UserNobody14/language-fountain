@@ -1,16 +1,26 @@
 # If you want some examples of settings, check out:
 # https://github.com/atom/language-gfm/blob/master/settings/gfm.cson
 
-'.source.fountain':
+'.source.fountain .secHeading, .source.fountain .heading':
   'autocomplete':
     'symbols':
-      character:
-        selector: '.dialogue.character'
-        typePriority: 2
       scene:
         selector: '.scene.heading'
         typePriority: 1
+      heading:
+        selector: '.secHeading'
+        typePriority: 2
+'.source.fountain':
   'editor':
     'commentStart': '/*'
     'commentEnd' : '*/'
     'softWrap': true
+'.source.fountain .dialogue.spoken':
+  'autocomplete':
+    'symbols':
+      spoken:
+        selector: '.spoken.dialogue'
+        typePriority: 3
+      action:
+        selector: '.action'
+        typePriority: 3

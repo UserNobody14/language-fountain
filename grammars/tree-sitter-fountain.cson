@@ -25,7 +25,8 @@ scopes:
     'dialogue > character' : 'string.other.dialogue.character.fountain'
     'dialogue > parenthetical' : 'string.other.dialogue.parenthetical.fountain'
     'dialogue > lyric' : 'lyric'
-    #Note to self: add in punctuation def entities?
+    #TODO: make all grammatical forcing characters highlighted separately.
+    #(using regex obviously.) start with section headings.
     #Emphasis Text
     'action, centered_action > normal_txt' : 'markup.normal.action'
     'action, centered_action > italic_txt' : 'markup.italic.action'
